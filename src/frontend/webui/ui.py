@@ -69,6 +69,8 @@ def get_web_ui() -> gr.Blocks:
     return fastsd_web_ui
 
 
-def start_webui():
+def start_webui(
+    share: bool = True,
+):
     webui = get_web_ui()
-    webui.launch(share=True)
+    webui.launch(share=share)

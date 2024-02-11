@@ -234,9 +234,7 @@ elif args.webui:
     from frontend.webui.ui import start_webui
 
     print("Starting web UI mode")
-    start_webui(
-        args.share,
-    )
+    start_webui(True)
 elif args.realtime:
     from frontend.webui.realtime_ui import start_realtime_text_to_image
 
