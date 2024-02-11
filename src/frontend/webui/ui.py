@@ -70,7 +70,7 @@ def get_web_ui() -> gr.Blocks:
 
 
 def start_webui(
-    share: bool = False,
+    share: bool = True,
 ):
     webui = get_web_ui()
     webui.launch(share=share)
